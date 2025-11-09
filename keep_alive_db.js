@@ -1,7 +1,7 @@
 // keep_alive_db.js
 import { Database } from '@sqlitecloud/drivers';
 
-const CONNECTION_STRING = "sqlitecloud://cjpbteq6hz.g2.sqlite.cloud:8860/frabel-database?apikey=FfhzRXRDvzVRsXe9eCffmWJWkvCHTallPKpwkv1b69o";
+const CONNECTION_STRING = process.env.SQLITE_CLOUD_URL;
 
 async function keepAlive() {
   let db; // Declaramos db fuera del try para que sea accesible en finally
