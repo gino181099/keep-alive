@@ -1,0 +1,13 @@
+{
+  "name": "sqlite-cloud-keep-alive-job",
+  "version": "1.0.0",
+  "description": "Script para mantener activa la conexión a SQLite Cloud.",
+  "main": "keep_alive_db.js",
+  "type": "module",
+  "scripts": {
+    "start": "node keep_alive_db.js"
+  },
+  "dependencies": {
+    "@sqlitecloud/drivers": "1.0.653"
+  }
+}
